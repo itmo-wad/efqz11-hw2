@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework 2 - Connection</title>
+    <link rel="stylesheet" href="{{stylesheet}}">
+
+    {% include "_header.html" %}
+</head>
+
+<body class="container">
+    {% include "_flash.html" %}
+
+    {% if "username" in session: %}
+        <div class="text-end">
+            <form method="post" action="logout">
+                <input type="submit" value="Sign Out" class="btn btn-danger">
+            </form>
+        </div>
+    {% endif %}
+
+    <h1>Profile</h1>
+    <p>You are connected as <b>{{session['username']}}</b></p>
+
+    <div class="d-flex align-items-center mb-3">
+        <img src="{{data.avatar_url}}" class="img rounded" style="height: 100px;" />
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Full Name</td>
+                        <td><b>{{data.fullname}}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Designation</td>
+                        <td><b>{{data.designation}}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>****** &nbsp;<a href="/update-password" class="">Change Password</a></b></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center">
+        <div>
+            <a href="/update-profile" class="btn btn-outline-primary">Update Profile</a>
+        </div>
+    </div>
+
+</body>
+</html>

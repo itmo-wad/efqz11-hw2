@@ -1,0 +1,21 @@
+.form-signin, .form-signup{
+    width: 100%;
+    max-width: 450px;
+    padding: 15px;
+    margin: auto;
+}
+
+.container{
+    margin: 5rem 10rem;
+}
+
+.hr{
+    background-color: aliceblue;
+}
+a {
+    text-decoration:none !important;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework 2 - Connection</title>
+
+    {% include "_header.html" %}
+</head>
+
+<body class="container">
+    {% include "_flash.html" %}
+
+    <div class="form-signup">
+        <form method="post">
+            <div class="form-group">
+                <b><label for="username_l">Username</label></b>
+                <input type="text" name="username_l" class="form-control" placeholder="username">
+            </div>
+            <div class="form-group">
+                <b><label for="password_l">Password</label></b>
+                <input type="password" name="password_l"  class="form-control" placeholder="password">
+            </div>
+            <input type="submit" name="login" value="Login" class="btn btn-primary mt-2">
+            &nbsp; <a href="/signup">No account? Create new</a>
+        </form>
+    </div>
+</body>
+</html>

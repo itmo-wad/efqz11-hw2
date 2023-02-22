@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homework 2 - SignUp</title>
+
+    {% include "_header.html" %}
+</head>
+
+
+<h1 class="text-center">Create User</h1>
+
+<body class="container">
+    {% include "_flash.html" %}
+    
+    <div class="form-signin" style="">
+        <form method="post">
+            <div class="form-group">
+                <b><label for="username">Username</label></b>
+                <input type="text" name="username" class="form-control" placeholder="username">
+            </div>
+
+            <div class="form-group">
+                <b><label for="password">Password</label></b>
+                <input type="password" name="password" class="form-control" placeholder="password">
+            </div>
+
+
+            <div class="form-group">
+                <b><label for="fullname">Full Name</label></b>
+                <input type="text" name="fullname" class="form-control" placeholder="fullname">
+            </div>
+
+            <div class="form-group">
+                <b><label for="designation">Designation</label></b>
+                <input type="text" name="designation" class="form-control" placeholder="designation">
+            </div>
+
+            <input type="submit" name="auth" value="Create account" class="btn btn-primary mt-2">
+        </form>
+    </div>
+</body>
+</html>

@@ -30,7 +30,7 @@ This is my submission of homework 2
 
 ## Run
 
-`python src/app.py`
+`python3 app.py`
 
 ## Credits
 
